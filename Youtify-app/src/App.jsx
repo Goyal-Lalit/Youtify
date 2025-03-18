@@ -8,16 +8,16 @@ import Library from './components/Library';
 function App() {
   return (
     <>
-    <div className='main-container'>
-      <div className='navbar bg-zinc-900'>
+    <div className='main-container bg-zinc-900 h-screen p-2'>
+      <div className='navbar bg-zinc-800 mx-2 rounded-md'>
       <Navbar />
       </div>
-      <div className='content flex gap-2'>
-        <div className='library bg-zinc-800 w-1/3'>
+      <div className='content flex gap-2 mt-2 px-2 '>
+        <div className='w-1/6 rounded-md'>
             <Library />
         </div>
-        <div className='queue bg-zinc-700 w-2/3' >
-            <Library />
+        <div className='queue bg-zinc-700 w-5/6 rounded-md px-7 py-5 overflow-scroll' >
+            {/* <Library /> */}
         </div>
       </div>
     </div>
