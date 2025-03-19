@@ -15,6 +15,13 @@ h3{
     border: none;
     outline: none;
 }
+FontAwesomeIcon:hover{
+    background-color: red;
+}
+.search:hover{
+    border: 1px solid #2c2c30 ;
+    border-bottom: 1px solid white;
+}
 .mood{
     appearance: none;
 }
@@ -43,13 +50,188 @@ h3{
 }
 .queue{
     scrollbar-width: none;
+}
+.card-container{
+    scrollbar-width: none;
     background-color: #2c2c30;
 }
 .menu-footer{
     scrollbar-width: none;
-    gap: 8px;
+    gap: 6px;
 }
 .menu-footer a{
     padding: 0px 10px;
     height: fit-content;
+}
+
+.music-container{
+    scrollbar-width: none;
+}
+
+.Trending{
+    scrollbar-width: none;
+}
+.Trending h2{
+    color: teal;
+    font-size: larger;
+}
+
+.trend-card-hold{
+    scrollbar-width: none;
+}
+.trend-card img{
+    width: 100px;
+    height: 90px;
+}
+
+@media only screen and (min-width: 1024px) {
+    .desktop-menu{
+        visibility: visible;
+    }
+    .library h2{
+        font-size: medium;
+    }
+    .tablet-menu{
+        
+        display: none;
+    }
+    .search{
+        padding: 5px;
+        border-radius: 5px;
+    }
+    .menu span{
+        visibility: visible;
+    }
+    .fa-icon{
+        visibility: visible;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .menu{
+        justify-content: center;
+        gap: 0px;
+        width: 100%;
+    }
+    .desktop-menu{
+        display: none;
+    }
+    .your-lib{
+        padding: 15px;
+        justify-content: center;
+    }
+    .library a{
+        display: flex;
+        justify-content: center;
+        padding: 5px 0px 0px 0px;
+        font-size: larger;
+    }
+    .search{
+        padding: 5px;
+        border-radius: 5px;
+    }
+    .fa-icon{
+        visibility: visible;
+        margin: 10px 0px;
+    }
+    .library h2{
+        display: none;
+    }
+    .tablet-menu{
+        visibility: visible;
+    }
+    .menu span{
+        display: none;
+
+    }
+    .menu h3{
+        display: none;  
+    }
+}
+@media only screen and (max-width: 768px) {
+    .logo{
+        padding-left: 0px 0px 0px 0px;
+        margin: 0px;
+        gap: 10px;
+        justify-content: space-between;
+        width: 50%;
+    }
+    .logo h1{
+        font-size: 4vw;
+    }
+    .logo span{
+        font-size: 3vw;
+    }
+    .search{
+        padding: 5px;
+        border-radius: 5px;
+    }
+    input{
+        width: 100%;
+    }
+    input::placeholder{
+        opacity: 0;
+    }
+    .search-icon{
+        width: 10%;
+    }
+    .menu{
+        align-items: center;
+    }
+    .library h2{
+        font-size: 3.5vw;
+        display: none;
+    }
+    .desktop-menu{
+        display: none;
+    }
+    .tablet-menu{
+        visibility: visible;
+    }
+    .main-nav{
+        justify-content: space-between;
+    }
+    .your-lib{
+        visibility: visible;
+    }
+    .fa-icon{
+        visibility: visible;
+    }
+    .menu span{
+        display: none;
+    }
+    .menu h3{
+        display: none;  
+    }
+}
+@media only screen and (max-width: 425px) {
+    .main-nav{
+        justify-content: space-around;
+    }
+    .search{
+        width: 85%;
+    }
+    .logo{
+        flex-wrap: nowrap;
+        width: 70%;
+        gap:10px;
+        padding: 0px;
+    }
+    .logo h1{
+        font-size: 5vw;
+    }
+    .logo span{
+        font-size: 4vw;
+    }
+    .tablet-menu{
+        padding: 0px 10px;
+    }
+    .menu{
+        justify-content: start;
+        gap: 50px;
+        padding-top: 0px;
+    }
+    .your-lib{
+        font-size: x-large;
+    }
 }

@@ -1,18 +1,24 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMagnifyingGlass,faFaceSmile,faHandFist,faHeartCrack, faBars} from '@fortawesome/free-solid-svg-icons'
 
 function Navbar() {
   return (
     <>
-    <div className='w-full h-20 flex flex-wrap justify-between items-center text-white bg-zinc-800 rounded-md'>
-        <div className='flex flex-wrap items-center justify-center gap-10 pl-8 bg-zinc-800'>
-            <div className='icon'>
+    <div className='main-nav w-full h-20 flex flex-wrap justify-between items-center text-white bg-zinc-800 rounded-md'>
+        <div className='logo flex flex-wrap items-center justify-center gap-10 pl-5 bg-zinc-800'>
+            <div className='flex items-center gap-2'>
                 {/* add app main logo icons */}
-                <a href='#'><h1  title='YOUTIFY' className='font-bold text-3xl font-lineto text-teal-600'>M<span className='text-white text-2xl'>OODIFY</span></h1></a>
+                <div>
+                    <a href='#'><h1  title='YOUTIFY' className='font-bold text-3xl font-lineto text-teal-600'>M<span className='text-white text-2xl'>OODIFY</span></h1></a>
+                </div>
+                
+               
             </div>
-            <div className='search w-70 text-teal-600 flex justify-evenly items-center gap-2 py-2 shadow-xl'>
+            <div className='search w-[58%] text-teal-600 flex justify-evenly items-center gap-2 py-2 shadow-xl'>
                 {/* add one search icon */}
                 <div className='search-icon'>
-                    <h2>A</h2>
+                    <FontAwesomeIcon icon={faMagnifyingGlass} style={{color: "#008080",}} />
                 </div>
                 {/* <span>|</span> */}
                 <div className='border-none'>
@@ -21,18 +27,21 @@ function Navbar() {
                 
             </div>
         </div>
-        <div className='flex flex-wrap items-center gap-5 pr-6 text-teal-600'>
+        <div className='desktop-menu flex flex-wrap items-center gap-5 pr-6 text-teal-600'>
             <select className='text-center pb-0.5 mood'>
                 <option value="" selected disabled><a href='#'>Mood</a></option>
-                <option value="option1"><a href='#'>Happy</a></option>
-                <option value="option1"><a href='#'>Sad</a></option>
-                <option value="option1"><a href='#'>Angry</a></option>
+                <option value="option1"><a href='#'><FontAwesomeIcon icon={faFaceSmile} style={{color: "#008080",}} /> Happy</a></option>
+                <option value="option1"><a href='#'><FontAwesomeIcon icon={faHeartCrack} style={{color: "#008080",}} /> Sad</a></option>
+                <option value="option1"><a href='#'><FontAwesomeIcon icon={faHandFist} style={{color: "#008080",}} /> Motivation</a></option>
                 <option value="option1"><a href='#'>Romantic</a></option>
             </select>
             <a href='#'>Install App</a>
             <a href='#'>Sign In</a>
             <a href='#'>Log In</a>
-        </div>    
+        </div> 
+        <div className='tablet-menu flex text-teal-600 px-10'>
+            <FontAwesomeIcon icon={faBars} style={{color: "#008080",}} />
+        </div>   
     </div>
       
     </>
