@@ -6,6 +6,9 @@ h3{
 .navbar a:hover{
     color: beige;
 }
+.logo{
+    width: 50%;
+}
 .search{
     border: 1px solid #2c2c30 ;
     border-bottom: 1px solid teal;
@@ -14,6 +17,9 @@ h3{
 .search input{
     border: none;
     outline: none;
+}
+.search-drop{
+    scrollbar-width: none;
 }
 FontAwesomeIcon:hover{
     background-color: red;
