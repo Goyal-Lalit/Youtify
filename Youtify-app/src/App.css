@@ -84,10 +84,23 @@ FontAwesomeIcon:hover{
 
 .trend-card-hold{
     scrollbar-width: none;
+    width: 100%;
 }
-.trend-card img{
-    width: 100px;
-    height: 90px;
+.trend-card {
+    flex-basis: 200px;
+    box-sizing: border-box;
+    height: 200px; /* Sets a consistent width for each card */
+    flex-shrink: 0;    /* Ensures cards don’t shrink below this width */
+}
+  
+img{
+    width: 120px;
+    height: 180px;
+}
+.track-text {
+  white-space: nowrap; /* Prevents text from wrapping */
+  overflow: hidden;    /* Hides overflowing text */
+  text-overflow: ellipsis; /* Adds "..." for overflowing text */
 }
 
 @media only screen and (min-width: 1024px) {

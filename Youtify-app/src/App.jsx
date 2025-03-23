@@ -19,7 +19,7 @@ function App() {
             <Library />
         </div>
         <div className='queue rounded-md bg-zinc-900 w-[88%] flex flex-col gap-2 h-[85.2vh]' >
-          <div className='card-container bg-zinc-800 w-[100%] rounded-md px-7 py-5 overflow-scroll h-[95%]'>
+          <div className='card-container bg-zinc-800 w-[100%] rounded-md py-5 overflow-scroll h-[95%]'>
               <MusicCard />
           </div>
           <div className='bg-zinc-800 rounded-md h-[10%]'>
